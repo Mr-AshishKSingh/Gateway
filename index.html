@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Three Dots Button -->
+    <div class="three-dots" onclick="togglePanel()">☰</div>
+
+    <!-- Side Panel -->
+    <div id="side-panel" class="side-panel">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Static Side Panel -->
+    <div class="static-side-panel">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Company Image -->
+        <div class="company-logo">
+            <img src="assets/images/banner.avif" alt="Company Logo">
+        </div>
+        <header>
+            <h1>Welcome to Your Payment Dashboard</h1>
+            <p class="subtitle">Manage your transactions, courses, and payments seamlessly.</p>
+        </header>
+        <main>
+            <section class="user-details">
+                <h2>User Profile</h2>
+                <div class="profile">
+                    <img src="assets/images/pfp.jpeg" alt="Profile Photo" class="profile-photo">
+                    <div class="profile-info">
+                        <p id="user-name"><strong>Name:</strong> Ashish Kumar Singh</p>
+                        <p id="user-email"><strong>Email:</strong> officialwork.ashish@gmail.com</p>
+                        <span class="verified-badge">Verified User</span>
+                    </div>
+                </div>
+                <div class="user-courses">
+                    <h3>Enrolled Courses</h3>
+                    <div class="courses-grid">
+                        <div class="course-box">
+                            <img src="assets/images/web.png" alt="Course 1" class="course-banner">
+                            <div class="course-info">
+                                <p class="course-name">GATE SAMVAAD - 2026 </p>
+                                <p class="enrollment-date">Enrolled: 10 April 2025</p>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="assets/images/machine.jpg" alt="Course 2" class="course-banner">
+                            <div class="course-info">
+                                <p class="course-name">Data Science</p>
+                                <p class="enrollment-date">Enrolled: 15 March 2025</p>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="assets/images/data.jpeg" alt="Course 3" class="course-banner">
+                            <div class="course-info">
+                                <p class="course-name">Machine Learning</p>
+                                <p class="enrollment-date">Enrolled: 20 February 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="amounts">
+                <h2>Transaction Details</h2>
+                <div class="current-course">
+                    <h3>Current Enrolled Course</h3>
+                    <div class="course-details">
+                        <img src="assets/images/web.png" alt="Current Course Thumbnail" class="course-thumbnail">
+                        <div class="course-info">
+                            <p><strong>Course Name:</strong> Web Development</p>
+                            <p><strong>Total Fees:</strong> Rs 1,50,000</p>
+                            <p><strong>Amount Deposited:</strong> Rs 1,00,000</p>
+                            <p><strong>Amount Left:</strong> Rs 50,000</p>
+                            <p><strong>Duration:</strong> 6 Months</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-modes">
+                    <h3>Modes of Payment</h3>
+                    <button class="pay-due-btn">Pay Due Fees</button>
+                    <ul>
+                        <li><span class="mode-icon">💳</span> UPI</li>
+                        <li><span class="mode-icon">🏦</span> NEFT</li>
+                        <li><span class="mode-icon">🌐</span> Net Banking</li>
+                        <li><span class="mode-icon">📱</span> Wallet</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="transaction-history">
+                <h2>Transaction History</h2>
+                <ul>
+                    <li>
+                        <span class="status-dot success"></span>
+                        Transaction 1: $200 - 12 April 2025
+                        <button class="print-receipt-btn" onclick="printReceipt('Transaction 1: $200 - 12 April 2025')">Print Receipt</button>
+                    </li>
+                    <li>
+                        <span class="status-dot failed"></span>
+                        Transaction 2: $300 - 13 April 2025
+                        <button class="print-receipt-btn" onclick="printReceipt('Transaction 2: $300 - 13 April 2025')">Print Receipt</button>
+                    </li>
+                    <li>
+                        <span class="status-dot success"></span>
+                        Transaction 3: $500 - 14 April 2025
+                        <button class="print-receipt-btn" onclick="printReceipt('Transaction 3: $500 - 14 April 2025')">Print Receipt</button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Payment Gateway. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="payment-gateway-webpage/assets/js/script.js"></script>
+</body>
+</html>
